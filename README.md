@@ -1,1 +1,1 @@
-# AdViewAndroidSdk 说明文档
+# AdViewSdk 说明文档
