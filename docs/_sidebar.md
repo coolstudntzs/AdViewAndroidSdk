@@ -1,6 +1,6 @@
 - 首页
   - [概述](guide.md)
-  - [注册使用](android/register-account.md)
+  - [注册](android/register-account.md)
   
 - SDK嵌入
 
