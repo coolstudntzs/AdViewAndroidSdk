@@ -58,7 +58,7 @@ public interface AdViewSpreadListener{
   ```
   - 开屏顶部通知设置
   
-  |     枚举名称   | 描述    |   常量值   |
+  |     枚举名称   | 描述    |   常量   |
   |----------------|----------------|---------------|
   | NOTIFY_COUNTER_NULL        | 不显示任何倒计时提示 | 0  |
   | NOTIFY_COUNTER_NUM         | 设置后顶部显示倒计时       | 1 |
