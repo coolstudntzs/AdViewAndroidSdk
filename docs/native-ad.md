@@ -43,6 +43,16 @@
 ```
 ## 原生字段说明
 
+  - 原生通用字段（任何广告类型均返回）
+
+ |     字段     | 类型         |     描述       |
+ |-------------|--------------|---------------|
+ |adId	        |String       |	广告Id，用于区分广告内容|
+ |title	        |String       |  	广告标题      |
+ |description   |	String      |	广告描述内容    |
+
+
+
   - 原生图文广告
   
   |     字段     | 类型         |     描述       |
@@ -57,5 +67,18 @@
   |imageWidth   |	int          |	大图宽         |
   |imageHeight  |	int          |	大图高         |
   |iconWidth    |	int          |	Icon宽         | 
-  |iconHeight   |	int	         |Icon高           |
+  |iconHeight   |	int	         |Icon高       |
+
+  - 原生视频广告
+
+  |     字段     | 类型         |     描述       |
+  |-------------|--------------|---------------|
+  |videoUrl	|String	       |视频物料下载地址      |
+  |iconUrl	|String	       |视频icon图片地址      |
+  |duration	|String	       |视频播放时长          |
+  |preImage	|String	       |视频前贴片图片地址     |
+  |endHtml	|String	       |播放完整页面html      |
+  |endImgUrl	|String	     |播放完成页面图片地址    |
+
+
 
