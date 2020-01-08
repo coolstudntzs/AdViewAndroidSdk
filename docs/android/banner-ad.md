@@ -5,9 +5,7 @@ Banner广告(横幅广告)位于app顶部、中部、底部任意一处，横向
 ## 接入代码示例
 ```javascript
   //初始化banner（传入的参数依次为 context，sdkKey，尺寸，是否刷新）
-  AdViewBannerManager adViewBIDView = new AdViewBannerManager (context, sdkKey, adSize, true);
-  //设置下载类广告非wifi状态下是否显示二次确认窗口。请在广告初始化后调用该方法
-  InitSDKManager.setDownloadNotificationEnable(true);
+  AdViewBannerManager adViewBIDView = new AdViewBannerManager (context, appId, adSize, true);
   //设置banner的关闭按钮
   adViewBIDView.setShowCloseBtn(false);
   //设置广告切换时间(秒)，如果不设置默认不自动切换广告,
