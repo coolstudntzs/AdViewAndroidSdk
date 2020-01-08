@@ -1,9 +1,9 @@
 
 ## 简介
-开屏广告以App启动作为曝光时机，提供5s的可感知广告展示。用户可以点击广告跳转到目标页面；或者点击右上角的“跳过”按钮，跳转到app内容首页
+Banner广告(横幅广告)位于app顶部、中部、底部任意一处，横向贯穿整个app页面；当用户与app互动时，Banner广告会停留在屏幕上，并可在一段时间后自动刷新
 
 ## 接入代码示例
-```java
+```javascript
   //初始化banner（传入的参数依次为 context，sdkKey，尺寸，是否刷新）
   AdViewBannerManager adViewBIDView = new AdViewBannerManager (context, sdkKey, adSize, true);
   //设置下载类广告非wifi状态下是否显示二次确认窗口。请在广告初始化后调用该方法
