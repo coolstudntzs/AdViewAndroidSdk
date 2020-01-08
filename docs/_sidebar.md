@@ -14,6 +14,6 @@
   - [视频广告](android/video-ad.md)  
   
 - SDK相关问题排查
-  - [错误排查](android/error-info.md)
+  - [注意事项](android/warn-info.md)
   - [混淆说明](android/proguard-info.md)
   
