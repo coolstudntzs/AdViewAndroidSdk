@@ -2,7 +2,7 @@
 
   - [如何注册](register-account.md)
   - [获取SDK](download-sdk.md)
-  - [嵌入准备](download-sdk.md) 
+  - [嵌入准备](ready-to-use.md) 
 
 - 接入代码
   - [横幅广告](banner-ad.md)
