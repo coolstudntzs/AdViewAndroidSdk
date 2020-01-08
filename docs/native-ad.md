@@ -79,6 +79,15 @@
   |preImage	|String	       |视频前贴片图片地址     |
   |endHtml	|String	       |播放完整页面html      |
   |endImgUrl	|String	     |播放完成页面图片地址    |
+  
+ ## 其他
+ 
+ - 原生物料广告（除nativeView字段外）需要开发者自行组合，并且手动调用展示上报以及点击上报；
+ - 当返回nativeView字段时，将不会返回其他原生物料字段，开发者只需将nativeView添加到界面中进行展示即可；开发者可根据nativeView的返回值判断由哪种方式进行展示。
+ - 原生视频广告，需要手动添加汇报方法([前往](native-ad))
+ 
+
+
 
 
 
