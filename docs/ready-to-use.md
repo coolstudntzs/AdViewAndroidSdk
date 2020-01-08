@@ -5,9 +5,9 @@
   
   |     平台名称    | 对应库名         |   最低版本要求  |
   |----------------|----------------|---------------|
-  | AdView         | adview-android-bid-x.x.x.jar        |  |
+  | AdView         | adview-android-bid-x.x.x.jar \n miit_mdid_1.0.10.aar       |  |
   | 广点通          | gdt_mob_release.jar       | 4.63.993 |
-  | 中辉网盟        | /index.html    | 1.0.1 |  
+  | 中辉网盟        | WSSDKAds_v1.0.1.aar    | 1.0.1 |  
   | 穿山甲          | open_ad_sdk.aar    | 2.5.2.6 |  
   |      百度      | Baidu_MobAds_SDK.aar    | 5.8 |  
 
