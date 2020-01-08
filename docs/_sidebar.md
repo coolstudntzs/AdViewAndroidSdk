@@ -1,3 +1,5 @@
+- [概述](guide.md)
+
 - SDK嵌入
 
   - [如何注册](android/register-account.md)
