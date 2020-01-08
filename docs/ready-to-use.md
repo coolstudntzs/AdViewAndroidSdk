@@ -5,12 +5,20 @@
   
   |     平台名称    | 对应库名         |   最低版本要求  |
   |----------------|----------------|---------------|
-  | AdView         | adview-android-bid-x.x.x.jar 
-  miit_mdid_1.0.10.aar       |  |
+  | AdView         | adview-android-bid-x.x.x.jar |  |
   | 广点通          | gdt_mob_release.jar       | 4.63.993 |
   | 中辉网盟        | WSSDKAds_v1.0.1.aar    | 1.0.1 |  
   | 穿山甲          | open_ad_sdk.aar    | 2.5.2.6 |  
-  |      百度      | Baidu_MobAds_SDK.aar    | 5.8 |  
+  |      百度      | Baidu_MobAds_SDK.aar    | 5.8 | 
+  
+  并添加依赖:
+  ```
+    api 'com.android.support:support-v4:28.0.0'
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
+    api 'com.squareup.okhttp3:okhttp:3.8.0'
+    api 'com.squareup.okio:okio:1.13.0'
+  ```
+
 
 ## 增加权限和声明代码
 
