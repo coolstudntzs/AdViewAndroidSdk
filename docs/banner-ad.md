@@ -20,7 +20,7 @@ Banner广告(横幅广告)位于app顶部、中部、底部任意一处，横向
   adViewBIDView.destory();
 ```
 ## 回调接口说明
-```java
+```javascript
   public interface AdViewBannerListener{
       /**
       * 当广告点击时调用该函数. 
