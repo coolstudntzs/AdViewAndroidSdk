@@ -27,7 +27,7 @@
 ## 回调接口说明
   
   ```js
-  public interface AdViewVideoListener {   
+  	public interface AdViewVideoListener {   
   
 		//当广告请求成功时调用该函数
 		void onReceivedVideo();
@@ -49,5 +49,5 @@
 	
 		//视频广告播放错误时调用
 		void onPlayedError(String error);
-}
+	}
   ```
