@@ -4,14 +4,14 @@
   
 ## 接入代码实例
 ```javascript
-    //初始化插屏（传入的参数依次为 Context，appId，posId，广告是否可关闭）
-    instlManager.loadInstlAd (context, APPID, POSID, true);
+	//初始化插屏（传入的参数依次为 Context，appId，posId，广告是否可关闭）
+	instlManager.loadInstlAd (context, APPID, POSID, true);
 
-    //设置监听回调	 
-    instlManager.setInstlListener (this);
+	//设置监听回调	 
+	instlManager.setInstlListener (this);
 
-    //当成功收到广告时 初始化插屏布局
-    instlManager.showInstl(context)
+	//当成功收到广告时 初始化插屏布局
+	instlManager.showInstl(context)
 
 ```
 
