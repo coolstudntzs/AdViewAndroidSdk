@@ -4,6 +4,7 @@ Banner广告(横幅广告)位于app顶部、中部、底部任意一处，横向
 
 ## 接入代码示例
 ```javascript
+
 	//创建横幅广告（传入的参数依次为 context，appId, posId，尺寸）
 	bannerManager.loadBannerAd(activity, APPID, POSID, AdManager.BANNER_SMART);
   
