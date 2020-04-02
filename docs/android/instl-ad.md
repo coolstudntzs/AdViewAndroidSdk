@@ -10,7 +10,7 @@
     //设置监听回调	 
     instlManager. setInstlListener (this);
 
-    //当成功接¬¬收到广告时 初始化插屏布局
+    //当成功收到广告时 初始化插屏布局
     instlManager.showInstl(context)
 
 ```
@@ -19,16 +19,22 @@
 ```javascript
 
     public interface AdViewInstlListener{
+    
 	//当广告点击时调用该函数. 
    	void onAdClicked();
+	
 	//当广告展示时调用该函数. 
     	void onAdDisplayed();
+	
 	//当收到广告时调用该函数. 
     	void onAdReceived();
+	
 	//当广告请求失败时调用该函数. 
 	void onAdFailedReceived(String error);
+	
 	//当广告关闭时调用该函数. 
 	void onAdReady();
+	
 	//当广告关闭时调用该函数. 
 	void onAdClosed();
     }
