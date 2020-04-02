@@ -27,7 +27,7 @@
 ## 回调接口说明
   
   ```js
-  	public interface AdViewVideoListener {   
+	public interface AdViewVideoListener {   
   
 		//当广告请求成功时调用该函数
 		void onReceivedVideo();
