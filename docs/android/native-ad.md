@@ -16,10 +16,10 @@
   nativeManager.setAdSize(320,150);
   
   //设置广告监听
-  nativeManager. setNativeListener(this);
+  nativeManager.setNativeListener(this);
   
   //广告返回ArrayList<NativeAd>时可设置广告交互监听
-  nativeAd. setInteractionListener(this)
+  nativeAd.setInteractionListener(this)
 ```
 
 ## 原生广告返回接口说明
