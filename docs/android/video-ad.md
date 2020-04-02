@@ -30,10 +30,10 @@
   public interface AdViewVideoListener {   
   
 	//当广告请求成功时调用该函数. 
-     	void onReceivedVideo();
+   	void onReceivedVideo();
 	
-    	//当广告请求失败时调用该函数.
-    	void onFailedReceivedVideo(String errorCode);
+  	//当广告请求失败时调用该函数.
+	void onFailedReceivedVideo(String errorCode);
 	
 	//视频广告准备完毕时调用，在此之后可以进行视频展示
 	void onVideoReady();
