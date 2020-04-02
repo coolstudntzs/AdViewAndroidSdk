@@ -6,45 +6,56 @@
 
 ## 接入代码示例
 ```js
-  //初始化原生广告（传入的参数依次为 Context，sdkKey,广告位id,监听接口）
-  AdViewNativeManager  adViewNative = new AdViewNativeManager (this, appId, posId, nativeAdCallBcak);
-  //请求广告 （可选参数 ：广告条数）
-  adViewNative.requestAd();
-  //头条广告打底，需要设置广告尺寸
-  adViewNative.setAdSize(1080,400);
-  nativeBean = (HashMap) nativeAdList.get(0);
-  // 汇报展示
-  adViewNative.reportImpression((String) nativeBean.get("adId"));
-  // 点击汇报 传入的参数为当前广告的id -->对应map的adId字段，点击广告View的坐标，坐标相对广告位左上角为原点
-  adViewNative.reportClick((String) nativeBean.get("adId"), 
-  (int)event.getX(),(int)event.getY());
-  //对于原生视频广告，需要添加如下汇报方法
-  //视频开始播放时上报
-  adViewNative.reportVideoStatus(this,(String) nativeAd.get("adId"),1); 
-  //视频播放1/2时上报
-  adViewNative.reportVideoStatus(this,(String) nativeAd.get("adId"),2); 
-  //视频播放完成时上报
-  adViewNative.reportVideoStatus(this,(String) nativeAd.get("adId"),3);
+  //初始化原生广告（传入的参数依次为 Context，appId, posId ）
+  nativeManager.loadNativeAd(this, APPID, POSID);
+  
+	//请求广告
+	nativeManager.requestAd(1);
+  
+  //设置广告尺寸,单位为dp
+  nativeManager.setAdSize(320,150);
+  
+  //设置广告监听
+  nativeManager. setNativeListener(this);
+  
+  //广告返回ArrayList<NativeAd>时可设置广告交互监听
+  nativeAd. setInteractionListener(this)
 ```
 
-## 回调接口说明
+## 原生广告返回接口说明
 
 ```js
   public interface AdViewNativeListener {
-      /**
-      * 当广告请求成功时调用该函数. 
-      */
-      public void onNativeAdReceived(List<HashMap> nativeAdList);
-      /**
-      * 当广告请求失败时调用该函数.
-      */
-      public void onNativeAdReceiveFailed(String errorCode);
-      /**
-      * 下载进度状态码.
-      */
-      public void onDownloadStatusChange(int arg0);
+  
+    	 //当广告请求成功时调用该函数. 
+    	void onNativeAdReceived(ArrayList<NativeAd> nativeAdList);
+      
+    	//当广告请求失败时调用该函数.
+   	  void onNativeAdReceiveFailed(String errorCode);
   }
+
 ```
+
+## 原生广告交互接口说明
+```js
+  public interface AdNativeInteractionListener {
+    //当广告被关闭时调用
+    void onAdClosed(View view);
+    
+    //当广告渲染成功时调用
+    void onNativeViewRendered(View view);
+    
+    //当广告渲染失败时调用
+    void onNativeViewRenderFailed(String error);
+    
+    //当广告被点击时调用
+    void onNativeViewClicked(View view);
+    
+    //当广告展示时调用
+    void onNativeViewDisplayed(View view);                                            
+}
+```
+
 ## 原生字段说明
 
   - 原生通用字段（任何广告类型均返回）
@@ -86,9 +97,27 @@
   
  ## 其他
  
- - 原生物料广告（除nativeView字段外）需要开发者自行组合，并且手动调用展示上报以及点击上报；
+ - 原生物料广告（除nativeView字段外）需要开发者自行组合；
  - 当返回nativeView字段时，将不会返回其他原生物料字段，开发者只需将nativeView添加到界面中进行展示即可；开发者可根据nativeView的返回值判断由哪种方式进行展示。
- - 原生视频广告，需要手动添加汇报方法([前往](native-ad))
+ - 原生物料类型，需要手动添加汇报方法
+ 
+ ```js
+  //普通物料类型点击上报
+  nativeAd.reportClick(adView, downX, downY); 
+  
+  //普通物料类型展示上报
+  nativeAd.reportImpression(adView); 
+  
+  //视频开始播放时上报
+  nativeAd.reportVideoStatus(this, AdManager.VIDEO_STATUS_START); 
+  
+  //视频播放1/2时上报
+  nativeAd.reportVideoStatus(this, AdManager.VIDEO_STATUS_MEDIUM); 
+  
+  //视频播放完成时上报
+  nativeAd.reportVideoStatus(this, AdManager.VIDEO_STATUS_END);
+ ```
+
  
 
 
