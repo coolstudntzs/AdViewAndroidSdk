@@ -6,16 +6,16 @@
 
  ```javascript
 	//初始化Instl（传入的参数依次为 Context，appId, posId，需要展示开屏广告的外层布局）
-	spreadManager. loadSpreadAd (context, APPID, POSID, parentView);
+	spreadManager.loadSpreadAd (context, APPID, POSID, parentView);
 	
 	//设置顶部倒计时通知方式
-	spreadManager. setSpreadNotifyType(AdManager.NOTIFY_COUNTER_NULL);
+	spreadManager.setSpreadNotifyType(AdManager.NOTIFY_COUNTER_NULL);
 	
 	// 设置开屏广告背景颜色
-	spreadManager. setBackgroundColor (“#000000”);
+	spreadManager.setBackgroundColor (“#000000”);
 	
 	//设置开屏广告监听回调
-	spreadManager. setSpreadListener (this);
+	spreadManager.setSpreadListener (this);
 ```
 ## 回调接口说明
 
