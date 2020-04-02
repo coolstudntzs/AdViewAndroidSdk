@@ -33,7 +33,7 @@ Banner广告(横幅广告)位于app顶部、中部、底部任意一处，横向
 		//当广告请求失败时调用该函数. 
 		void onAdFailedReceived(String error);
 		
-    	//当广告关闭时调用该函数. 
+		//当广告关闭时调用该函数. 
 		void onAdClosed();
     
 		//广告渲染成功. 
