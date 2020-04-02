@@ -17,6 +17,7 @@
     -keep class android.support.v7.**{
         public *;
     }
+    -keep class com.bun.miitmdid.core.** {*;}
     -keep class com.androidquery.callback.** {*;}
     -keep class com.bun.miitmdid.core.** {*;} 
     -keep class com.bytedance.sdk.openadsdk.** { *; }
@@ -29,5 +30,6 @@
     -dontskipnonpubliclibraryclasses
     -dontpreverify
     -verbose
+
   ```
   目前Adview SDK混淆支持proguard4.6以上的版本，开发者可以去[proguard](http://sourceforge.net/projects/proguard/files/proguard/)官方网站下载4.6或以上版本；
