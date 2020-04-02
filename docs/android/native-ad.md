@@ -6,39 +6,39 @@
 
 ## 接入代码示例
 ```js
-  //初始化原生广告（传入的参数依次为 Context，appId, posId ）
-  nativeManager.loadNativeAd(this, APPID, POSID);
+    //初始化原生广告（传入的参数依次为 Context，appId, posId ）
+    nativeManager.loadNativeAd(this, APPID, POSID);
   
-  //请求广告
-  nativeManager.requestAd(1);
+    //请求广告
+    nativeManager.requestAd(1);
   
-  //设置广告尺寸,单位为dp
-  nativeManager.setAdSize(320,150);
+    //设置广告尺寸,单位为dp
+    nativeManager.setAdSize(320,150);
   
-  //设置广告监听
-  nativeManager.setNativeListener(this);
+    //设置广告监听
+    nativeManager.setNativeListener(this);
   
-  //广告返回ArrayList<NativeAd>时可设置广告交互监听
-  nativeAd.setInteractionListener(this)
+    //广告返回ArrayList<NativeAd>时可设置广告交互监听
+    nativeAd.setInteractionListener(this)
 ```
 
 ## 原生广告返回接口说明
 
 ```js
-  public interface AdViewNativeListener {
+    public interface AdViewNativeListener {
   
         //当广告请求成功时调用该函数. 
-    	void onNativeAdReceived(ArrayList<NativeAd> nativeAdList);
+        void onNativeAdReceived(ArrayList<NativeAd> nativeAdList);
       
         //当广告请求失败时调用该函数.
         void onNativeAdReceiveFailed(String errorCode);
-  }
+    }
 
 ```
 
 ## 原生广告交互接口说明
 ```js
-  public interface AdNativeInteractionListener {
+    public interface AdNativeInteractionListener {
         //当广告被关闭时调用
         void onAdClosed(View view);
     
@@ -53,7 +53,7 @@
     
         //当广告展示时调用
         void onNativeViewDisplayed(View view);                                            
-}
+    }
 ```
 
 ## 原生字段说明
@@ -102,20 +102,20 @@
  - 原生物料类型，需要手动添加汇报方法
  
  ```js
-  //普通物料类型点击上报
-  nativeAd.reportClick(adView, downX, downY); 
+    //普通物料类型点击上报
+    nativeAd.reportClick(adView, downX, downY); 
   
-  //普通物料类型展示上报
-  nativeAd.reportImpression(adView); 
+    //普通物料类型展示上报
+    nativeAd.reportImpression(adView); 
   
-  //视频开始播放时上报
-  nativeAd.reportVideoStatus(this, AdManager.VIDEO_STATUS_START); 
+    //视频开始播放时上报
+    nativeAd.reportVideoStatus(this, AdManager.VIDEO_STATUS_START); 
   
-  //视频播放1/2时上报
-  nativeAd.reportVideoStatus(this, AdManager.VIDEO_STATUS_MEDIUM); 
+    //视频播放1/2时上报
+    nativeAd.reportVideoStatus(this, AdManager.VIDEO_STATUS_MEDIUM); 
   
-  //视频播放完成时上报
-  nativeAd.reportVideoStatus(this, AdManager.VIDEO_STATUS_END);
+    //视频播放完成时上报
+    nativeAd.reportVideoStatus(this, AdManager.VIDEO_STATUS_END);
  ```
 
  
