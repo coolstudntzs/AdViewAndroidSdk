@@ -21,7 +21,7 @@
 	public interface AdViewInstlListener{
     
 		//当广告点击时调用该函数. 
-   		void onAdClicked();
+		void onAdClicked();
 	
 		//当广告展示时调用该函数. 
 		void onAdDisplayed();
