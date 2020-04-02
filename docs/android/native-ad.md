@@ -9,8 +9,8 @@
   //初始化原生广告（传入的参数依次为 Context，appId, posId ）
   nativeManager.loadNativeAd(this, APPID, POSID);
   
-	//请求广告
-	nativeManager.requestAd(1);
+  //请求广告
+  nativeManager.requestAd(1);
   
   //设置广告尺寸,单位为dp
   nativeManager.setAdSize(320,150);
@@ -31,7 +31,7 @@
     	void onNativeAdReceived(ArrayList<NativeAd> nativeAdList);
       
     	//当广告请求失败时调用该函数.
-   	  void onNativeAdReceiveFailed(String errorCode);
+   	void onNativeAdReceiveFailed(String errorCode);
   }
 
 ```
