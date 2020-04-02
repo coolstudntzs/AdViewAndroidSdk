@@ -29,25 +29,25 @@
   ```js
   public interface AdViewVideoListener {   
   
-	//当广告请求成功时调用该函数
-	void onReceivedVideo();
+		//当广告请求成功时调用该函数
+		void onReceivedVideo();
 	
-	//当广告请求失败时调用该函数
-	void onFailedReceivedVideo(String errorCode);
+		//当广告请求失败时调用该函数
+		void onFailedReceivedVideo(String errorCode);
 	
-	//视频广告准备完毕时调用，在此之后可以进行视频展示
-	void onVideoReady();
+		//视频广告准备完毕时调用，在此之后可以进行视频展示
+		void onVideoReady();
 	
-	//视频广告开始播放时调用
-	void onVideoStartPlayed();
+		//视频广告开始播放时调用
+		void onVideoStartPlayed();
 	
-	//视频广告播放结束时调用
-	void onVideoFinished();
+		//视频广告播放结束时调用
+		void onVideoFinished();
 	
-	//视频广告被关闭时调用，如需要再次缓存视频广告，请在此接口调用后再次请求广告
-	void onVideoClosed();
+		//视频广告被关闭时调用，如需要再次缓存视频广告，请在此接口调用后再次请求广告
+		void onVideoClosed();
 	
-	//视频广告播放错误时调用
-	void onPlayedError(String error);
+		//视频广告播放错误时调用
+		void onPlayedError(String error);
 }
   ```
