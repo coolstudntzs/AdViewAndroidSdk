@@ -8,7 +8,7 @@
     instlManager.loadInstlAd (context, APPID, POSID, true);
 
     //设置监听回调	 
-    instlManager. setInstlListener (this);
+    instlManager.setInstlListener (this);
 
     //当成功收到广告时 初始化插屏布局
     instlManager.showInstl(context)
