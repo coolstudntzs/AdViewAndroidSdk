@@ -18,25 +18,25 @@
 ## 回调接口说明
 ```javascript
 
-    public interface AdViewInstlListener{
+	public interface AdViewInstlListener{
     
-	//当广告点击时调用该函数. 
-   	void onAdClicked();
+		//当广告点击时调用该函数. 
+   		void onAdClicked();
 	
-	//当广告展示时调用该函数. 
-    	void onAdDisplayed();
+		//当广告展示时调用该函数. 
+		void onAdDisplayed();
 	
-	//当收到广告时调用该函数. 
-    	void onAdReceived();
+		//当收到广告时调用该函数. 
+		void onAdReceived();
 	
-	//当广告请求失败时调用该函数. 
-	void onAdFailedReceived(String error);
+		//当广告请求失败时调用该函数. 
+		void onAdFailedReceived(String error);
 	
-	//当广告关闭时调用该函数. 
-	void onAdReady();
+		//当广告关闭时调用该函数. 
+		void onAdReady();
 	
-	//当广告关闭时调用该函数. 
-	void onAdClosed();
-    }
+		//当广告关闭时调用该函数. 
+		void onAdClosed();
+	}
 
 ```
