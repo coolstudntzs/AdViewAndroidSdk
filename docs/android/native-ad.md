@@ -27,11 +27,11 @@
 ```js
   public interface AdViewNativeListener {
   
-    	 //当广告请求成功时调用该函数. 
+        //当广告请求成功时调用该函数. 
     	void onNativeAdReceived(ArrayList<NativeAd> nativeAdList);
       
-    	//当广告请求失败时调用该函数.
-   	void onNativeAdReceiveFailed(String errorCode);
+        //当广告请求失败时调用该函数.
+        void onNativeAdReceiveFailed(String errorCode);
   }
 
 ```
@@ -39,20 +39,20 @@
 ## 原生广告交互接口说明
 ```js
   public interface AdNativeInteractionListener {
-    //当广告被关闭时调用
-    void onAdClosed(View view);
+        //当广告被关闭时调用
+        void onAdClosed(View view);
     
-    //当广告渲染成功时调用
-    void onNativeViewRendered(View view);
+        //当广告渲染成功时调用
+        void onNativeViewRendered(View view);
     
-    //当广告渲染失败时调用
-    void onNativeViewRenderFailed(String error);
+        //当广告渲染失败时调用
+        void onNativeViewRenderFailed(String error);
     
-    //当广告被点击时调用
-    void onNativeViewClicked(View view);
+        //当广告被点击时调用
+        void onNativeViewClicked(View view);
     
-    //当广告展示时调用
-    void onNativeViewDisplayed(View view);                                            
+        //当广告展示时调用
+        void onNativeViewDisplayed(View view);                                            
 }
 ```
 
