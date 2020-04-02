@@ -4,7 +4,7 @@
 
 ## 接入代码示例
 
- ```javascript
+ ```js
 	//初始化Instl（传入的参数依次为 Context，appId, posId，需要展示开屏广告的外层布局）
 	spreadManager.loadSpreadAd (context, APPID, POSID, parentView);
 	
@@ -19,27 +19,27 @@
 ```
 ## 回调接口说明
 
-```javascript
+```js
     public interface AdViewSpreadListener{
     
-   	//当广告点击时调用该函数. 
-    	void onAdClicked();
+		//当广告点击时调用该函数. 
+		void onAdClicked();
 	
-	//当广告展示时调用该函数. 
-   	void onAdDisplayed();
+		//当广告展示时调用该函数. 
+		void onAdDisplayed();
 	
-	//当收到广告时调用该函数. 
-   	void onAdReceived();
+		//当收到广告时调用该函数. 
+		void onAdReceived();
 	
-	//当广告请求失败时调用该函数. 
-   	void onAdFailedReceived(String error);
+		//当广告请求失败时调用该函数. 
+		void onAdFailedReceived(String error);
 	
-	//当广告关闭时调用该函数. 
-	void onAdClosed();
+		//当广告关闭时调用该函数. 
+		void onAdClosed();
 	
-	//展示时间结束将要关闭时调用该函数. 
-	void onAdSpreadPrepareClosed();
-    }
+		//展示时间结束将要关闭时调用该函数. 
+		void onAdSpreadPrepareClosed();
+	}
 ```
 ## 开屏顶部通知设置
   
@@ -52,11 +52,11 @@
   ## 其他
   - 针对api>19的机型，建议显示开屏时隐藏NavigationBar，代码如下：
   ```javascript
-  if(Build.VERSION.SDK_INT >= 19) {
-    View decorView = getWindow().getDecorView();
-    int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+	if(Build.VERSION.SDK_INT >= 19) {
+		View decorView = getWindow().getDecorView();
+		int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
             | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
-    decorView.setSystemUiVisibility(uiOptions);
-  }
+		decorView.setSystemUiVisibility(uiOptions);
+	}
   ```
 
