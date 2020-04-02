@@ -40,4 +40,13 @@ Banner广告(横幅广告)位于app顶部、中部、底部任意一处，横向
 }
 
 ```
+## 横幅尺寸说明
+
+  |     字段     |        描述        |
+  |-------------|-------------------|
+  |AdManager.BANNER_SMART	|根据广告尺寸智能分配比例（推荐）     |
+  |AdManager.BANNER_AUTO_FILL	|宽度优先，横向充满               |
+  |AdManager.BANNER_480X75	|按照480*75 dp的比例充满          |
+  |AdManager.BANNER_728X90	|按照728*90 dp的比例充满     |
+
 
